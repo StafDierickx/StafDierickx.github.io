@@ -4,7 +4,7 @@ const playlistDom = document.getElementById("playlist")
 let searchbar = document.getElementById("search-bar")
 
 async function fetchLibrary(account_id) {
-    let resp = await fetch("http://127.0.0.1:3000/search-playlist", {
+    let resp = await fetch("https://web2-courseproject-musicmood.onrender.com/search-playlist", {
         method: "post",
         headers: {"Content-Type": "application/json",},
         body: JSON.stringify({
@@ -49,7 +49,7 @@ function renderPlaylists(List) {
 }
 
 async function delPlaylist(id) {
-    let resp = await fetch("http://127.0.0.1:3000/delete-playlist", {
+    let resp = await fetch("https://web2-courseproject-musicmood.onrender.com/delete-playlist", {
         method: "delete",
         headers: {"Content-Type": "application/json",},
         body: JSON.stringify({

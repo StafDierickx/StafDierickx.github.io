@@ -6,7 +6,7 @@ const playlistDom = document.getElementById("playlist")
 
 async function fetchPlaylist(categoryName) {
     console.log("fething results for:", categoryName)
-    let resp = await fetch("http://127.0.0.1:3000/search-playlist", {
+    let resp = await fetch("https://web2-courseproject-musicmood.onrender.com/search-playlist", {
         method: "post",
         headers: {"Content-Type": "application/json",},
         body: JSON.stringify({

@@ -62,7 +62,7 @@ async function makePlaylist() {
 
     console.log(playlistInfo)
 
-    let resp = await fetch("http://127.0.0.1:3000/create-playlist", {
+    let resp = await fetch("https://web2-courseproject-musicmood.onrender.com/create-playlist", {
         method: "put",
         headers: {"Content-Type": "application/json",},
         body: JSON.stringify(
@@ -76,7 +76,7 @@ async function makePlaylist() {
 }
 
 async function addSong(id) {
-    let song = await fetch("http://127.0.0.1:3000/song", {
+    let song = await fetch("https://web2-courseproject-musicmood.onrender.com/song", {
         method: "post",
         headers: {"Content-Type": "application/json",},
         body: JSON.stringify({
@@ -170,14 +170,14 @@ searchbar.addEventListener("input", async (event) => {
 });
 
 async function fetchCategories() {
-    let moodsList = await fetch("http://127.0.0.1:3000/get-categories", {
+    let moodsList = await fetch("https://web2-courseproject-musicmood.onrender.com/get-categories", {
         method: "post"
     })
     moodsList = await moodsList.json() 
     return moodsList
 }
 async function fetchSongs(query) {
-    songList = await fetch("http://127.0.0.1:3000/search-song", {
+    songList = await fetch("https://web2-courseproject-musicmood.onrender.com/search-song", {
         method: "post",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({

@@ -10,7 +10,7 @@ const pDescription = document.getElementById("pDescription")
 const pCoverImage = document.getElementById("pCoverImage")
 
 async function fetchPlaylist(playlist_id) {
-    let resp = await fetch("http://127.0.0.1:3000/search-playlist", {
+    let resp = await fetch("https://web2-courseproject-musicmood.onrender.com/search-playlist", {
         method: "post",
         headers: {"Content-Type": "application/json",},
         body: JSON.stringify({
@@ -21,7 +21,7 @@ async function fetchPlaylist(playlist_id) {
     return resp
 }
 async function fetchSong(id) {
-    let resp = await fetch("http://127.0.0.1:3000/song", {
+    let resp = await fetch("https://web2-courseproject-musicmood.onrender.com/song", {
         method: "post",
         headers: {"Content-Type": "application/json",},
         body: JSON.stringify({

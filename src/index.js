@@ -6,7 +6,7 @@ let searchbar = document.getElementById("search-bar")
 let moodsList = []
 
 async function fetchMoods() {
-    moodsList = await fetch("http://127.0.0.1:3000/get-categories", {
+    moodsList = await fetch("https://web2-courseproject-musicmood.onrender.com/get-categories", {
         method: "post",
         body: {
             "empty": "empty"
