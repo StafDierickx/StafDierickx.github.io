@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="./css/navbar.css" />
+        <link rel="stylesheet" href="./css/searchbar.css" />
+        <link rel="icon" type="image/x-icon" href="./img/icons/heart_crack.svg">
+        <script src="./src/index.js" defer></script>
+        <title>musicmood</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <div class="navbar">
+                    <a href="./">
+                        <img src="./img/icons/back_btn.svg" alt="">
+                    </a>
+
+                    <h1>musicmood</h1>
+                    <div class="flex-grow"></div>
+                    <a href="./library.html"><img src="./img/icons/library.svg" alt=""></a>
+                    <a href=""><img src="./img/icons/heart.svg" alt=""></a>
+                    <a href="./create-playlist.html"><img src="./img/icons/plus_ico.svg" alt=""></a>
+
+                    <div>
+                        <img src="./img/pfp/5a983bd0d69c9c3bfcaeac8efe28fe2c.jpg" alt="profile picture" />
+                    </div>
+
+                    <a href="./login.html">
+                        <img src="./img/icons/log_out.svg" alt="">
+                    </a>
+                </div>
+
+                <br />
+                <div class="back-tile">
+                    <form action="" id="search-bar">
+                        <div>
+                            <input
+                                id="search-input"
+                                class="input"
+                                type="text"
+                                placeholder="I am lookin for..."
+                            />
+                        </div>
+                    </form>
+                </div>
+                <div class="back-tile">
+                    <h2>Pick your mood</h2>
+                    <hr />
+                    <div class="tiler" id="moods">
+                        <div class="card">
+                            <div class="card-content">
+                                <p>Loading...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                        <p style="text-align: center;">Thats all, theres nothign left...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
